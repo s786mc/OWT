@@ -99,6 +99,44 @@ window.addEventListener("scroll", () => {
         played = true;
     }
 });
+</script> <script>
+const section = document.querySelector('section.projects');
+const audio = new Audio('./files/audio/dododo.ogg');
+
+const msg = document.createElement('div');
+msg.textContent = 'درحال اتصال به صفحه، معمولا ۴ ثانیه طول می‌کشد.';
+Object.assign(msg.style, {
+    display: 'none',
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    background: '#000',
+    color: '#fff',
+    padding: '20px',
+    borderRadius: '10px',
+    fontFamily: 'sans-serif',
+    fontSize: '16px',
+    zIndex: '9999'
+});
+document.body.appendChild(msg);
+
+section.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // نمایش پیام
+        msg.style.display = 'block';
+
+        // پخش صدا
+        audio.play().catch(() => {});
+
+        // بعد ۴ ثانیه هدایت به لینک
+        setTimeout(() => {
+            window.location.href = link.href;
+        }, 4000);
+    });
+});
 </script>
 </body>
 </html>
