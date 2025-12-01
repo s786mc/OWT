@@ -1,0 +1,16 @@
+text  {
+text-align: center;
+color: #666;
+border-radius: 3px;
+border-style: solid;
+border-color: black;
+background-color: whitesmoke;
+font-family: sans-serif;
+border-right: 8px;
+}
+*  {
+margin: 0px;
+}
+body  {
+background-color: #60a5fa;
+}
