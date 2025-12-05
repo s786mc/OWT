@@ -1,1 +1,83 @@
-loading
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Phonk</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--  فایل CSS جدا شده -->
+    <link rel="stylesheet" href="./file/index.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-headphones-alt"></i></div>
+                <div>
+                    <div class="logo-text" dir="ltr">My Phonk</div>
+                    <div class="tagline"></div>
+                </div>
+            </div>
+            <div class="pulse" style="color: #ff0080; font-size: 1.2rem;">
+                <i class="fas fa-volume-up"></i> 
+            </div>
+        </header>
+        
+        <section class="main-title">
+            <h1>Best Phonks</h1>
+            <p>Download best funks in the World</p>
+        </section>
+        
+        <section class="selection-section">
+            <h2 class="section-title"><i class="fas fa-fire"></i> New and popular </h2>
+            
+            <div class="phonk-card" data-phonk="metamorphosis">
+
+                <div class="phonk-image">
+                    <img src="https://s786mc.github.io/Markdown/lang/cn-icon.png" alt="Phonk!">
+                </div>
+
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+
+                <div class="phonk-info">
+                    <div class="phonk-title">name</div>
+                    <div class="phonk-artist"><i class="fas fa-user"></i> ath</div>
+                    <div class="phonk-desc">des</div>
+                </div>
+
+            </div>
+
+            <div class="custom-selection">
+                <h3><i class="fas fa-sliders-h"></i> Other Phonks</h3>
+                <p style="color: #ccc; margin-bottom: 20px;">You have a phonk name? try it:</p>
+                
+                <div class="custom-input">
+                    <input type="text" id="customPhonk" placeholder="Enter phonk name here">
+                    <button id="goCustomPhonk">Search in MyPhonk</button>
+                </div>
+                
+                <div class="warning">
+                    <i class="fas fa-exclamation-triangle"></i> 
+                    <strong>WARNING:</strong> <br> If page doesn't exist, you see an error.
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Really you have good web to download Phonk</p>
+        </footer>
+    </div>
+    
+    <div class="redirect-notice" id="redirectNotice">
+        <p style="margin-bottom: 10px; font-weight: bold; color: #8a2be2;">Loading....</p>
+        <p id="redirectUrl" style="margin-top: 10px; color: #00ffff;"></p>
+    </div>
+
+   
+    <script src="./file/index.js"></script>
+
+</body>
+</html>
