@@ -225,7 +225,7 @@
             }
         }
 
-        /* برای دستگاه‌های خیلی کوچک (مثل آیفون SE) */
+       
         @media (max-width: 320px) {
             .deepseek {
                 margin: 0.2rem;
