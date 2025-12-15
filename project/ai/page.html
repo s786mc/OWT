@@ -1,1 +1,39 @@
-xd
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>AI</title>
+  <style>
+    .ai-section {
+      display: none; 
+      padding: 20px;
+      border: 1px solid #ccc;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div id="deepseek" class="ai-section">این بخش مخصوص DeepSeek است</div>
+  <div id="chatGPT" class="ai-section">این بخش مخصوص ChatGPT است</div>
+  <div id="Gemini" class="ai-section">این بخش مخصوص Gemini است</div>
+  <div id="grok" class="ai-section">این بخش مخصوص Grok است</div>
+  <div id="copilot" class="ai-section">این بخش مخصوص Copilot است</div>
+
+  <script>
+    
+    const params = new URLSearchParams(window.location.search);
+    const ai = params.get("ai"); 
+    
+    const validAIs = ["deepseek", "chatGPT", "Gemini", "grok", "copilot"];
+
+    if (ai && validAIs.includes(ai)) {
+     
+      document.getElementById(ai).style.display = "block";
+    } else {
+    
+      window.location.href = "page-error.html";
+    }
+  </script>
+</body>
+</html>
