@@ -1,11 +1,9 @@
-/* styles.css - استایل اصلی وبسایت هوش مصنوعی */
 
-/* Reset و فونت‌ها */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: 'Mikhak, system-ui, -apple-system, sans-serif;
 }
 
 :root {
@@ -305,7 +303,7 @@ body {
 }
 
 .deepseek-page .logo-icon::before {
-    content: "🌀";
+    content: "";
 }
 
 .deepseek-page .nav-links a {
@@ -364,7 +362,7 @@ body {
 }
 
 .chatgpt-page .logo-icon::before {
-    content: "🤖";
+    content: "";
 }
 
 .chatgpt-page .nav-links a {
@@ -423,7 +421,7 @@ body {
 }
 
 .copilot-page .logo-icon::before {
-    content: "✈️";
+    content: "";
 }
 
 .copilot-page .nav-links a {
@@ -482,7 +480,7 @@ body {
 }
 
 .gemini-page .logo-icon::before {
-    content: "💎";
+    content: "";
 }
 
 .gemini-page .nav-links a {
